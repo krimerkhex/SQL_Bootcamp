@@ -1,0 +1,1 @@
+select person.id, person.name, 'interval #3' as interval_info from person;

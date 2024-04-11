@@ -1,0 +1,2 @@
+select name as first_statement from pizzeria where pizzeria.id not in (select pizzeria_id as id from person_visits group by pizzeria_id order by pizzeria_id);
+select name as second_statement from pizzeria where not exists (select pizzeria_id from person_visits where pizzeria.id = person_visits.pizzeria_id);

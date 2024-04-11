@@ -1,0 +1,2 @@
+-- Anna (age:16,gender:'female',address:'Moscow')
+select person.name || ' (age:' || chr(39) || person.age || chr(39) || ',gender:' || chr(39) || person.gender|| chr(39)  || ',address:'|| chr(39)  || person.address|| chr(39)  || ')' as person_information  from person order by name;
